@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="gemStore">
+
+<html lang="en" ng-app="store">
+
 <head>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
-
-
-
 
   <meta charset="UTF-8">
   <title>Document</title>
+
 </head>
+
 <body ng-controller="StoreController as store">
-<div ng-hide="store.product.soldOut">
-  <h1>{{store.product.name}}</h1>
-  <h2>${{store.product.price}}</h2>
-  <p>{{store.product.description}}</p>
-  <button ng-show="store.product.canPurchase">Add to Cart</button>
-</div>  
+<div ng-repeat="product in store.products">
+  <h1>{{product.name}}</h1>
+  <h2>${{product.price}}</h2>
+  <p>{{product.description}}</p>
+  <button ng-show="product.canPurchase">Add to Cart</button>
+</div>
+  
+
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
 
