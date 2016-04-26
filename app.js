@@ -16,8 +16,8 @@ var gems = [
         thumbnail: 'gem-01.gif'
       },
       {
-        full: 'dodecahedron-full-2.jpg',
-        thumbnail: 'dodecahedron-thumb-2.gif'
+        full: 'pentagonal-gem.jpg',
+        thumbnail: 'pentagonal-gem.jpg'
       }
     ],
     canPurchase: true

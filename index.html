@@ -39,6 +39,18 @@
               <li ng-class="{ active:tab === 2 }"><a href ng-click="tab = 2">Specifications</a></li>
               <li ng-class="{ active:tab === 3 }"><a href ng-click="tab = 3">Reviews</a></li>
            </ul> 
+             <div class="panel" ng-show="tab === 1">
+              <h4>Description</h4>
+              <p>{{product.description}}</p>  
+             </div>
+             <div class="panel" ng-show="tab === 2">
+              <h4>Specifications</h4>
+              <blockquote>None yet</blockquote>
+             </div>
+             <div class="panel" ng-show="tab === 3">
+              <h4>Reviews</h4>
+              <blockquote>None yet</blockquote>
+             </div>
           </section>
 
           <button class="btn btn btn-default" ng-show="product.canPurchase">Add to Cart</button>
@@ -52,18 +64,7 @@
         
 
 
-      <div class="panel" ng-show="tab === 1">
-        <h4>Description</h4>
-        <p>{{product.description}}</p>  
-      </div>
-      <div class="panel" ng-show="tab === 2">
-        <h4>Specifications</h4>
-        <blockquote>None yet</blockquote>
-      </div>
-      <div class="panel" ng-show="tab === 3">
-        <h4>Reviews</h4>
-        <blockquote>None yet</blockquote>
-      </div>
+      
 
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
