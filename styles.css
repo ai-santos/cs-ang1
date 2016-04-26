@@ -1,4 +1,20 @@
-.container {
-  text-align: center;
+button {
+    height:30px; 
+    width:100px; 
+    margin: 0px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+    display: block;
 }
 
