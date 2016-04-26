@@ -3,21 +3,31 @@
 <html lang="en" ng-app="store">
 
 <head>
-
+  
+  <!-- Bootstrap Style Sheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
 
+  <!-- Custom Style Sheet -->
   <link rel="stylesheet" href="styles.css"/>
+  
   <meta charset="UTF-8">
-  <title>Document</title>
-
+  
+  <!-- Page Title -->
+  <title>Gem Store</title>
 </head>
-
 <body ng-controller="StoreController as store">
+  <!-- Store Header -->
+  <header>
+    <h1 class="text-center">Flatlander Crafted Gems</h1>
+    <h2 class="text-center">– an Angular store –</h2>
+  </header>
+
+
   <div class="container" id="product-info">
     <div class="col-xs-6 col-md-4 col-md-offset-4"> 
       <div class="panel" ng-show="tab === 1">
         <h4>Description</h4>
-        <p>{{product.description}}</p>
+        <p>{{product.description}}</p>  
       </div>
       <div class="panel" ng-show="tab === 2">
         <h4>Specifications</h4>
@@ -35,9 +45,9 @@
         </h3>
         <section ng-init="tab = 1">
          <ul class="nav nav-pills">
-            <li><a href ng-click="tab = 1">Description</a></li>
-            <li><a href ng-click="tab = 2">Specifications</a></li>
-            <li><a href ng-click="tab = 3">Reviews</a></li>
+            <li ng-class="{ active:tab === 1 }"><a href ng-click="tab = 1">Description</a></li>
+            <li ng-class="{ active:tab === 2 }"><a href ng-click="tab = 2">Specifications</a></li>
+            <li ng-class="{ active:tab === 3 }"><a href ng-click="tab = 3">Reviews</a></li>
          </ul> 
         </section>
         
