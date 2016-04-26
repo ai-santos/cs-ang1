@@ -32,22 +32,23 @@
         <h3>{{product.name}}<em class="pull-right">{{product.price | currency}}</em></h3>
           <img class="center" ng-src="{{product.images[0].full}}"/>
 
-
-          <section ng-init="tab = 1">
+    
+    <!-- Product Tabs -->
+          <section>
            <ul class="nav nav-pills">
-              <li ng-class="{ active:tab === 1 }"><a href ng-click="tab = 1">Description</a></li>
-              <li ng-class="{ active:tab === 2 }"><a href ng-click="tab = 2">Specifications</a></li>
-              <li ng-class="{ active:tab === 3 }"><a href ng-click="tab = 3">Reviews</a></li>
+              <li ng-class="{ active:tab.isSet(1) }"><a href ng-click="tab.setTab(1)">Description</a></li>
+              <li ng-class="{ active:tab.iseSet(2) }"><a href ng-click="tab.setTab(2)">Specifications</a></li>
+              <li ng-class="{ active:tab.isSet(3) }"><a href ng-click="tab.setTab(3)">Reviews</a></li>
            </ul> 
-             <div class="panel" ng-show="tab === 1">
+             <div class="panel" ng-show="tab.isSet(1)">
               <h4>Description</h4>
               <p>{{product.description}}</p>  
              </div>
-             <div class="panel" ng-show="tab === 2">
+             <div class="panel" ng-show="tab.isSet(2)">
               <h4>Specifications</h4>
               <blockquote>None yet</blockquote>
              </div>
-             <div class="panel" ng-show="tab === 3">
+             <div class="panel" ng-show="tab.isSet(3)">
               <h4>Reviews</h4>
               <blockquote>None yet</blockquote>
              </div>

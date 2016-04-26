@@ -5,6 +5,22 @@ app.controller('StoreController', function(){
     this.products = gems;
   });
 
+app.directive("productTabs", function(){
+  return {
+    controller: function() {
+      this.tab = 1;
+
+      this.isSet = function(checkTab) {
+        return this.tab === checkTab;
+      };
+
+      this.setTab = function(selectedTab){
+        this.tab = selectedTab;
+      };
+    }, 
+    controllerAs: "tab"
+  };
+});
 var gems = [
 {
     name: 'Dodecahedron',
