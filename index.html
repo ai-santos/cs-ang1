@@ -34,35 +34,35 @@
 
     
     <!-- Product Tabs -->
-          <section>
-           <ul class="nav nav-pills">
-              <li ng-class="{ active:tab.isSet(1) }"><a href ng-click="tab.setTab(1)">Description</a></li>
-              <li ng-class="{ active:tab.iseSet(2) }"><a href ng-click="tab.setTab(2)">Specifications</a></li>
-              <li ng-class="{ active:tab.isSet(3) }"><a href ng-click="tab.setTab(3)">Reviews</a></li>
-           </ul> 
-             <div class="panel" ng-show="tab.isSet(1)">
-              <h4>Description</h4>
-              <p>{{product.description}}</p>  
-             </div>
-             <div class="panel" ng-show="tab.isSet(2)">
-              <h4>Specifications</h4>
-              <blockquote>None yet</blockquote>
-             </div>
+    <section>
+     <ul class="nav nav-pills">
+        <li ng-class="{ active:tab.isSet(1) }"><a href ng-click="tab.setTab(1)">Description</a></li>
+        <li ng-class="{ active:tab.iseSet(2) }"><a href ng-click="tab.setTab(2)">Specifications</a></li>
+        <li ng-class="{ active:tab.isSet(3) }"><a href ng-click="tab.setTab(3)">Reviews</a></li>
+     </ul> 
+       <div class="panel" ng-show="tab.isSet(1)">
+        <h4>Description</h4>
+        <p>{{product.description}}</p>  
+       </div>
+       <div class="panel" ng-show="tab.isSet(2)">
+        <h4>Specifications</h4>
+        <blockquote>None yet</blockquote>
+       </div>
     
-    <!-- Product Reviews List -->
-             <div class="panel" ng-show="tab.isSet(3)">
-              <h4>Reviews</h4>
-              <li ng-repeat="review in product.reviews">
-                <blockquote>None yet
-                  <strong>Stars: {{review.stars}}</strong>
-                  <cite class="clearfix">by: {{review.author}}</cite>
-                </blockquote>
-              </li>
-             </div>
-          </section>
+  <!-- Product Reviews List -->
+     <div class="panel" ng-show="tab.isSet(3)">
+      <h4>Reviews</h4>
+      <li ng-repeat="review in product.reviews">
+        <blockquote>None yet
+          <strong>Stars: {{review.stars}}</strong>
+          <cite class="clearfix">by: {{review.author}}</cite>
+        </blockquote>
+      </li>
+     </div>
+  </section>
 
-    <!--  Review Form -->
-<form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
+  <!--  Review Form -->
+  <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
 
   <!--  Live Preview -->
   <blockquote >
