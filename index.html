@@ -48,9 +48,16 @@
               <h4>Specifications</h4>
               <blockquote>None yet</blockquote>
              </div>
+    
+    <!-- Product Reviews List -->
              <div class="panel" ng-show="tab.isSet(3)">
               <h4>Reviews</h4>
-              <blockquote>None yet</blockquote>
+              <li ng-repeat="review in product.reviews">
+                <blockquote>None yet
+                  <strong>Stars: {{review.stars}}</strong>
+                  <cite class="clearfix">by: {{review.author}}</cite>
+                </blockquote>
+              </li>
              </div>
           </section>
 

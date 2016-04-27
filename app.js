@@ -21,6 +21,7 @@ app.directive("productTabs", function(){
     controllerAs: "tab"
   };
 });
+
 var gems = [
 {
     name: 'Dodecahedron',
@@ -34,6 +35,18 @@ var gems = [
       {
         full: 'pentagonal-gem.jpg',
         thumbnail: 'pentagonal-gem.jpg'
+      }
+    ],
+    reviews: [
+      {
+        stars: 5,
+        body: "Makes me feel like royalty, truly beautiful.",
+        author: "ai@leen.com"
+      },
+      {
+        stars: 1,
+        body: "Does not look like the picture, blech.",
+        author: "lee@hates.com"
       }
     ],
     canPurchase: true
