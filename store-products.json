@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Amethyst",
+    "description": "is a meditative and calming stone which works in the emotional, spiritual, and physical planes to provide calm, balance, patience, and peace.",
+    "images": [
+      "images/amethyst.jpg",
+      "images/Amethyst-2.jpg",
+      "images/Amethyst-3.jpg"
+    ],
+    "reviews": [
+      {
+        "stars": 5,
+        "body": "Makes me feel like royalty, truly beautiful.",
+        "author": "ai@leen.com"
+      },
+      {
+        "stars": 1,
+        "body": "Does not look like the picture, blech.",
+        "author": "lee@hates.com"
+      }
+    ]
+  },
+  {
+    "name": "Dodecahedron",
+    "description": "has been a source of metaphysical interest for at least 2000 years. Like a crystal or gem, its facets and symmetries compel our eyes and hearts to observe life more deeply. Some have believed that the Dodecahedron represents an idealized form of Divine thought, will, or idea. ",
+    "images": [
+      "images/dodecahedron-full-2.jpg",
+      "images/dodecahedron-full.jpg",
+      "images/dodecahedron-thumb-2.gif"
+    ],
+    "reviews": [
+      {
+        "stars": 5,
+        "body": "Makes me feel like royalty, truly beautiful.",
+        "author": "ai@leen.com"
+      },
+      {
+        "stars": 1,
+        "body": "Does not look like the picture, blech.",
+        "author": "lee@hates.com"
+      }
+    ]
+  },
+  {
+    "name": "Dodecahedron",
+    "description": "has been a source of metaphysical interest for at least 2000 years. Like a crystal or gem, its facets and symmetries compel our eyes and hearts to observe life more deeply. Some have believed that the Dodecahedron represents an idealized form of Divine thought, will, or idea. ",
+    "images": [
+      "images/dodecahedron-full-2.jpg",
+      "images/dodecahedron-full.jpg",
+      "images/dodecahedron-thumb-2.gif"
+    ],
+    "reviews": [
+      {
+        "stars": 5,
+        "body": "Makes me feel like royalty, truly beautiful.",
+        "author": "ai@leen.com"
+      },
+      {
+        "stars": 1,
+        "body": "Does not look like the picture, blech.",
+        "author": "lee@hates.com"
+      }
+    ]
+  },
+  {
+    "name": "Dodecahedron",
+    "description": "has been a source of metaphysical interest for at least 2000 years. Like a crystal or gem, its facets and symmetries compel our eyes and hearts to observe life more deeply. Some have believed that the Dodecahedron represents an idealized form of Divine thought, will, or idea. ",
+    "images": [
+      "images/dodecahedron-full-2.jpg",
+      "images/dodecahedron-full.jpg",
+      "images/dodecahedron-thumb-2.gif"
+    ],
+    "reviews": [
+      {
+        "stars": 5,
+        "body": "Makes me feel like royalty, truly beautiful.",
+        "author": "ai@leen.com"
+      },
+      {
+        "stars": 1,
+        "body": "Does not look like the picture, blech.",
+        "author": "lee@hates.com"
+      }
+    ]
+  }
+]
